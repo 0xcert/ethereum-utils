@@ -38,7 +38,7 @@ contract Claimable is Ownable {
 
   /**
    * @dev Allows the current pending owner to claim the ownership of the contract. It emits
-   * OwnershipTransferred event.
+   * OwnershipTransferred event and resets pending owner to 0.
    */
   function claimOwnership()
     public
